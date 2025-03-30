@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<h2>Welcome, @ViewBag.UserName</h2>
+
+@if (!string.IsNullOrEmpty(ViewBag.QRData))
+{
+    <p>Scanned QR Code: <strong>@ViewBag.QRData</strong></p>
+}
+
+<a href="/Auth/Logout">Logout</a>

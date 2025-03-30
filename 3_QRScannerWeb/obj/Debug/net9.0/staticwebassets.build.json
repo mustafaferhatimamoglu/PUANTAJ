@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "WXu0Rr8YHJk07OyZb6U8X7M5qnCdMF/UBBE8G9LApVg=",
+  "Source": "QRScannerWeb",
+  "BasePath": "_content/QRScannerWeb",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
