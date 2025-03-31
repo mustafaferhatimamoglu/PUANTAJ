@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\QRScannerWeb\\QRScannerWeb.csproj": {}
+    "C:\\Users\\user\\Desktop\\PUANTAJ\\3_QRScannerWeb\\QRScannerWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\QRScannerWeb\\QRScannerWeb.csproj": {
+    "C:\\Users\\user\\Desktop\\PUANTAJ\\3_QRScannerWeb\\QRScannerWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\QRScannerWeb\\QRScannerWeb.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\PUANTAJ\\3_QRScannerWeb\\QRScannerWeb.csproj",
         "projectName": "QRScannerWeb",
-        "projectPath": "C:\\Users\\user\\source\\repos\\QRScannerWeb\\QRScannerWeb.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\PUANTAJ\\3_QRScannerWeb\\QRScannerWeb.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\QRScannerWeb\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\PUANTAJ\\3_QRScannerWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",

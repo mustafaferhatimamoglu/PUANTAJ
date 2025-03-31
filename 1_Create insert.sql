@@ -1,27 +1,23 @@
-CREATE TABLE Kullanıcılar (
+-- 1ï¸âƒ£ Users Table: Stores user login info
+CREATE TABLE Kullanicilar (
     ID INT IDENTITY(1,1) PRIMARY KEY,
-    Ad NVARCHAR(100) NOT NULL,
-    Soyad NVARCHAR(100) NOT NULL,
-    Ünvan NVARCHAR(100) NULL
+    KullaniciAdi NVARCHAR(100) UNIQUE NOT NULL,
+    Sifre NVARCHAR(255) NOT NULL -- Store hashed passwords
 );
-GO
 
+-- 2ï¸âƒ£ QR Code Log Table: Stores generated QR codes and approval status
+CREATE TABLE QRCodeLog (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    QRCode NVARCHAR(255) NOT NULL,
+    KullaniciID INT FOREIGN KEY REFERENCES Kullanicilar(ID) ON DELETE CASCADE,
+    YoneticiOnayi BIT DEFAULT 0,  -- 0 = Pending, 1 = Approved
+    OlusturmaTarihi DATETIME DEFAULT GETDATE() -- Timestamp when QR is generated
+);
+
+-- 3ï¸âƒ£ Entry-Exit Records Table: Stores attendance logs
 CREATE TABLE GirisCikisKayitlari (
     ID INT IDENTITY(1,1) PRIMARY KEY,
-    KullanıcıID INT NOT NULL,
-    Yön NVARCHAR(50) NOT NULL CHECK (Yön IN ('Giriş', 'Çıkış')),
-    İşlemTarihi DATETIME DEFAULT GETDATE(),
-    FOREIGN KEY (KullanıcıID) REFERENCES Kullanıcılar(ID) ON DELETE CASCADE
+    KullaniciID INT FOREIGN KEY REFERENCES Kullanicilar(ID) ON DELETE CASCADE,
+    Yon NVARCHAR(50) NOT NULL CHECK (Yon IN ('Giris', 'Cikis')), -- Entry or Exit
+    IslemTarihi DATETIME DEFAULT GETDATE() -- Timestamp of the action
 );
-GO
-
-INSERT INTO Kullanıcılar (Ad, Soyad, Ünvan) VALUES 
-('Admin', 'Admin', 'Admin'),
-('Kullanıcı1', 'Kullanıcı1', 'Kullanıcı1'),
-('Kullanıcı2', 'Kullanıcı2', 'Kullanıcı2');
-
-INSERT INTO GirisCikisKayitlari (KullanıcıID, Yön) VALUES
-(1, 'Giriş'),
-(1, 'Çıkış'),
-(1, 'Giriş');
-GO
