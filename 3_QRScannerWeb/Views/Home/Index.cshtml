@@ -4,7 +4,11 @@
 
 <h2>Welcome, @ViewBag.UserName</h2>
 
-@if (!string.IsNullOrEmpty(ViewBag.QRData))
+@if (!string.IsNullOrEmpty(ViewBag.Error))
+{
+    <p style="color:red;">@ViewBag.Error</p>
+}
+else if (!string.IsNullOrEmpty(ViewBag.QRData))
 {
     <p>Scanned QR Code: <strong>@ViewBag.QRData</strong></p>
 }
