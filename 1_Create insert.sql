@@ -1,23 +1,86 @@
--- 1️⃣ Users Table: Stores user login info
-CREATE TABLE Kullanicilar (
-    ID INT IDENTITY(1,1) PRIMARY KEY,
-    KullaniciAdi NVARCHAR(100) UNIQUE NOT NULL,
-    Sifre NVARCHAR(255) NOT NULL -- Store hashed passwords
-);
+USE [PUANTAJ]
+GO
 
--- 2️⃣ QR Code Log Table: Stores generated QR codes and approval status
-CREATE TABLE QRCodeLog (
-    ID INT IDENTITY(1,1) PRIMARY KEY,
-    QRCode NVARCHAR(255) NOT NULL,
-    KullaniciID INT FOREIGN KEY REFERENCES Kullanicilar(ID) ON DELETE CASCADE,
-    YoneticiOnayi BIT DEFAULT 0,  -- 0 = Pending, 1 = Approved
-    OlusturmaTarihi DATETIME DEFAULT GETDATE() -- Timestamp when QR is generated
-);
+/****** Object:  Table [dbo].[GirisCikisKayitlari]    Script Date: 08.04.2025 18:38:16 ******/
+SET ANSI_NULLS ON
+GO
 
--- 3️⃣ Entry-Exit Records Table: Stores attendance logs
-CREATE TABLE GirisCikisKayitlari (
-    ID INT IDENTITY(1,1) PRIMARY KEY,
-    KullaniciID INT FOREIGN KEY REFERENCES Kullanicilar(ID) ON DELETE CASCADE,
-    Yon NVARCHAR(50) NOT NULL CHECK (Yon IN ('Giris', 'Cikis')), -- Entry or Exit
-    IslemTarihi DATETIME DEFAULT GETDATE() -- Timestamp of the action
-);
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[GirisCikisKayitlari](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[KullaniciID] [int] NULL,
+	[Yon] [nvarchar](50) NOT NULL,
+	[IslemTarihi] [datetime] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[GirisCikisKayitlari] ADD  DEFAULT (getdate()) FOR [IslemTarihi]
+GO
+
+ALTER TABLE [dbo].[GirisCikisKayitlari]  WITH CHECK ADD FOREIGN KEY([KullaniciID])
+REFERENCES [dbo].[Kullanicilar] ([ID])
+ON DELETE CASCADE
+GO
+
+ALTER TABLE [dbo].[GirisCikisKayitlari]  WITH CHECK ADD CHECK  (([Yon]='Cikis' OR [Yon]='Giris'))
+GO
+
+
+
+USE [PUANTAJ]
+GO
+
+/****** Object:  Table [dbo].[Kullanicilar]    Script Date: 08.04.2025 18:38:25 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Kullanicilar](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[KullaniciAdi] [nvarchar](100) NOT NULL,
+	[Sifre] [nvarchar](255) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY],
+UNIQUE NONCLUSTERED 
+(
+	[KullaniciAdi] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+USE [PUANTAJ]
+GO
+
+/****** Object:  Table [dbo].[QRCodeLog]    Script Date: 08.04.2025 18:39:26 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[QRCodeLog](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[QRCode] [nvarchar](255) NOT NULL,
+	[OlusturmaTarihi] [datetime] NULL,
+ CONSTRAINT [PK__QRCodeLo__3214EC27E902822D] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[QRCodeLog] ADD  CONSTRAINT [DF__QRCodeLog__Olust__4E88ABD4]  DEFAULT (getdate()) FOR [OlusturmaTarihi]
+GO
+
+
