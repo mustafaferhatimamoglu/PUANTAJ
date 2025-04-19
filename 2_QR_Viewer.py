@@ -45,7 +45,8 @@ class QRApp(QWidget):
     def update_qr_code(self):
         """QR kodu güncelle ve veritabanına kaydet"""
         random_id = self.generate_random_id()
-        page_url = f"http://example.com/user?id={random_id}"  # Yeni URL
+        #page_url = f"http://example.com/user?id={random_id}"  # Yeni URL
+        page_url = f"http://192.168.1.104/Home/Index?QRData={random_id}"  # Yeni URL
 
         # QR Kod Oluşturma
         qr = pyqrcode.create(page_url)

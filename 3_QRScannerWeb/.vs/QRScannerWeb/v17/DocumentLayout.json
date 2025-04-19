@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\PUANTAJ\\3_QRScannerWeb\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{31E71110-35CE-46CB-A793-1120AFB1CCC1}|QRScannerWeb.csproj|c:\\users\\user\\desktop\\puantaj\\3_qrscannerweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31E71110-35CE-46CB-A793-1120AFB1CCC1}|QRScannerWeb.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{31E71110-35CE-46CB-A793-1120AFB1CCC1}|QRScannerWeb.csproj|c:\\users\\user\\desktop\\puantaj\\3_qrscannerweb\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31E71110-35CE-46CB-A793-1120AFB1CCC1}|QRScannerWeb.csproj|solutionrelative:controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{31E71110-35CE-46CB-A793-1120AFB1CCC1}|QRScannerWeb.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31E71110-35CE-46CB-A793-1120AFB1CCC1}|QRScannerWeb.csproj|c:\\users\\user\\desktop\\puantaj\\3_qrscannerweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31E71110-35CE-46CB-A793-1120AFB1CCC1}|QRScannerWeb.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{31E71110-35CE-46CB-A793-1120AFB1CCC1}|QRScannerWeb.csproj|c:\\users\\user\\desktop\\puantaj\\3_qrscannerweb\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{31E71110-35CE-46CB-A793-1120AFB1CCC1}|QRScannerWeb.csproj|solutionrelative:views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -50,11 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Daily.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\PUANTAJ\\3_QRScannerWeb\\Views\\Report\\Daily.cshtml",
               "RelativeDocumentMoniker": "Views\\Report\\Daily.cshtml",
@@ -62,25 +62,24 @@
               "RelativeToolTip": "Views\\Report\\Daily.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T15:32:29.425Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T15:32:29.425Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ReportController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\PUANTAJ\\3_QRScannerWeb\\Controllers\\ReportController.cs",
               "RelativeDocumentMoniker": "Controllers\\ReportController.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\PUANTAJ\\3_QRScannerWeb\\Controllers\\ReportController.cs",
               "RelativeToolTip": "Controllers\\ReportController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCMAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAkwCMAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T13:29:28.099Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\PUANTAJ\\3_QRScannerWeb\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -88,12 +87,11 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-03T20:56:40.932Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T20:56:40.932Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "QRScannerWeb",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\PUANTAJ\\3_QRScannerWeb\\QRScannerWeb.csproj",
               "RelativeDocumentMoniker": "QRScannerWeb.csproj",
@@ -104,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\PUANTAJ\\3_QRScannerWeb\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -116,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\PUANTAJ\\3_QRScannerWeb\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -124,12 +122,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T13:04:25.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T13:04:25.033Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\PUANTAJ\\3_QRScannerWeb\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -137,8 +134,7 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-30T13:03:24.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T13:03:24.211Z"
             },
             {
               "$type": "Document",
@@ -154,20 +150,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\PUANTAJ\\3_QRScannerWeb\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\PUANTAJ\\3_QRScannerWeb\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAACwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAowCAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T13:02:31.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\PUANTAJ\\3_QRScannerWeb\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -175,8 +171,7 @@
               "RelativeToolTip": "Controllers\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAACNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T12:46:59.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T12:46:59.596Z"
             }
           ]
         }
