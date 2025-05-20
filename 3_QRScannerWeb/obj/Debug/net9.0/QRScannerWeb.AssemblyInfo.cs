@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QRScannerWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+716bf8427ccc40322db4fd9890b45115959c110e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e863bc54584ee68c5098588665a944005ba0068")]
 [assembly: System.Reflection.AssemblyProductAttribute("QRScannerWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QRScannerWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
